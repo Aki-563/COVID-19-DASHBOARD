@@ -57,3 +57,7 @@ The frontend communicates with public APIs to pull real-time data:
 
 ---
 
+<p align="center">
+Developed with ❤️ by Akilesh Palanisamy 
+</p>
+
