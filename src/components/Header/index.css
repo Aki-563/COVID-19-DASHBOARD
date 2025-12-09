@@ -1,0 +1,104 @@
+.website-container {
+    width: 100%;
+    background-color: #161625;
+}
+
+.header {
+    width: 100%;
+    background-color: rgba(30, 30, 48, 0.75);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    z-index: 1000;
+    position: fixed;
+}
+
+.header-container {
+    width: 90%;
+    max-width: 1140px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    flex-wrap: wrap;
+    background-color: transparent;
+}
+
+.blue {
+    color: #007bff;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+.header-logo {
+    font-size: 20px;
+    height: 54px;
+}
+
+.tabs-list {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    gap: 20px;
+    cursor: pointer;
+}
+
+.nav-toggle-label {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-toggle-label {
+        display: block;
+        cursor: pointer;
+        padding: 10px;
+    }
+
+    .nav-toggle-label span,
+    .nav-toggle-label span::before,
+    .nav-toggle-label span::after {
+        display: block;
+        background: white;
+        height: 2px;
+        width: 25px;
+        position: relative;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .nav-toggle-label span::before,
+    .nav-toggle-label span::after {
+        content: '';
+        position: absolute;
+    }
+
+    .nav-toggle-label span::before {
+        bottom: 8px;
+    }
+
+    .nav-toggle-label span::after {
+        top: 8px;
+    }
+
+    .tabs-list {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        margin-top: 10px;
+    }
+
+    .tabs-list li {
+        padding: 10px 0;
+    }
+
+    .nav-toggle:checked~.tabs-list {
+        display: flex;
+    }
+}

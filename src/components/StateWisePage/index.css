@@ -1,0 +1,123 @@
+.state-wise-container {
+    width: 90%;
+    max-width: 1140px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    padding-top: 54px;
+    height: 100%;
+    min-height: 100vh;
+}
+
+@media (max-width: 978px) {
+    .state-wise-container {
+        gap: 24px;
+        padding-top: 78px;
+    }
+}
+
+.state-wise-header-container {
+    height: auto;
+    min-height: 181px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.statename-date-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: start;
+}
+
+.state-name-container {
+    color: #4d96ff;
+    background-color: #152740;
+    padding: 5px 25px;
+    border: none;
+    border-radius: 40px;
+    font-size: 20px;
+    width: fit-content;
+    margin: 0;
+    text-align: center;
+}
+
+.tested-container {
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    gap: 8px;
+}
+
+@media (max-width: 500px) {
+    .state-wise-header-container {
+        flex-direction: column;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .statename-date-container {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        align-items: center;
+        justify-content: center;
+        text-align: start;
+    }
+
+    .tested-container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 8px;
+    }
+}
+
+.dynamic-chart {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 64px;
+}
+
+@media (max-width: 978px) {
+    .dynamic-chart {
+        margin-bottom: 24px;
+    }
+}
+
+.static-charts {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 978px) {
+    .static-charts {
+        margin-bottom: 24px;
+    }
+}
+
+.failure-view-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.failure-heading {
+    font-size: 22px;
+    color: #cbd5e1;
+    font-family: 'Roboto';
+    margin-bottom: 15px;
+}
