@@ -20,7 +20,6 @@ The UI is clean, responsive, and designed to help users understand trends quickl
 * Dynamic UI: Colors change dynamically (Red, Blue, Green, Grey) based on the selected statistic.
 * FAQs & Factoids: Educational resources using Accordions and random banner generation.
 * Responsive Design: Fully optimized for mobile devices with hamburger menus and adaptive layouts.
-* Theme: Created using liquid glass design and inspired by SteamDB, giving the dashboard a modern and polished look. 🧊✨
 
 ---
 
